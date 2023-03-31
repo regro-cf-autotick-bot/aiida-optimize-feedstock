@@ -1,5 +1,5 @@
 {% set name = "aiida-optimize" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiida-optimize-{{ version }}.tar.gz
-  sha256: 5309fa588e9e71ef04e76ba1e4ea84bd85bf3c27e6760779f82623fcd01abff9
-  patches:
-  - install_requires.patch
+  sha256: 8df97556c8221d4760d5b0ea4af5446a7b5c0a2138e1cc26dc1cdb2bb8177715
 
 build:
   noarch: python
